@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalTranslate</title>
+
+    <!-- Load styles -->
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>LocalTranslate</h1>
+        <h2>Multilingual Translation Extension</h2>
+        
+        <div id="model-status" class="model-status hidden">
+            <div id="file-progress-container"></div>
+        </div>
+        
+        <div class="language-selectors">
+            <div class="lang-group">
+                <label for="sourceLang">From:</label>
+                <select id="sourceLang">
+                    <option value="auto" selected>Auto-detect</option>
+                    <option value="en">English (en)</option>
+                    <option value="es">Spanish (es)</option>
+                    <option value="fr">French (fr)</option>
+                    <option value="de">German (de)</option>
+                    <option value="it">Italian (it)</option>
+                    <option value="pt">Portuguese (pt)</option>
+                    <option value="ru">Russian (ru)</option>
+                    <option value="ja">Japanese (ja)</option>
+                    <option value="ko">Korean (ko)</option>
+                    <option value="zh">Chinese (zh)</option>
+                    <option value="ar">Arabic (ar)</option>
+                    <option value="hi">Hindi (hi)</option>
+                    <option value="nl">Dutch (nl)</option>
+                    <option value="pl">Polish (pl)</option>
+                    <option value="tr">Turkish (tr)</option>
+                </select>
+            </div>
+            <div class="lang-group">
+                <label for="targetLang">To:</label>
+                <select id="targetLang">
+                    <option value="fr" selected>French (fr)</option>
+                    <option value="en">English (en)</option>
+                    <option value="es">Spanish (es)</option>
+                    <option value="de">German (de)</option>
+                    <option value="it">Italian (it)</option>
+                    <option value="pt">Portuguese (pt)</option>
+                    <option value="ru">Russian (ru)</option>
+                    <option value="ja">Japanese (ja)</option>
+                    <option value="ko">Korean (ko)</option>
+                    <option value="zh">Chinese (zh)</option>
+                    <option value="ar">Arabic (ar)</option>
+                    <option value="hi">Hindi (hi)</option>
+                    <option value="nl">Dutch (nl)</option>
+                    <option value="pl">Polish (pl)</option>
+                    <option value="tr">Turkish (tr)</option>
+                </select>
+            </div>
+        </div>
+        
+        <input id="text" placeholder="Enter text to translate">
+        <div id="output"></div>
+    </div>
+</body>
+
+</html>
